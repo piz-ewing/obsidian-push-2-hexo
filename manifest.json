@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-push-2-hexo",
+  "name": "push-2-hexo",
+  "version": "0.0.1",
+  "description": "push a post to hexo",
+  "author": "piz-ewing",
+  "isDesktopOnly": false
+}
+
