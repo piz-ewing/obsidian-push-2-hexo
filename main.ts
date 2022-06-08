@@ -31,6 +31,13 @@ export default class P2H extends Plugin {
     }
 
     await this.loadSettings();
+
+    this.addCommand({
+      id: 'obsidian-push-2-hexo',
+      name: 'p2h post',
+      callback: () => this.p2h('post'),
+    });
+
     this.refreshIconRibbon();
   }
 
