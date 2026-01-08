@@ -116,9 +116,9 @@ export default class P2H extends Plugin {
 
         if (!this.isExist(abs_filepath)) {
             abs_filepath += ".md";
-            if (!_this.isExist(abs_filepath)) {
-                var assets_filepath = path.resolve(_this.current_file_path, "assets", _this.current_file_name, filepath);
-                if (!_this.isExist(assets_filepath)) {
+            if (!this.isExist(abs_filepath)) {
+                var assets_filepath = path.resolve(this.current_file_path, "assets", this.current_file_name, filepath);
+                if (!this.isExist(assets_filepath)) {
                     return match;
                 }
                 abs_filepath = assets_filepath;
@@ -226,4 +226,5 @@ class P2HSettingsTab extends PluginSettingTab {
     );
   }
 }
+
 
